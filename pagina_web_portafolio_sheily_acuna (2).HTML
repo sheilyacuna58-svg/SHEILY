@@ -1,0 +1,139 @@
+export default function SheilyAcuñaPortfolio() {
+  return (
+    <div className="min-h-screen bg-pink-50 text-slate-800 font-sans">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-pink-300 via-blue-200 to-pink-200 text-slate-800 py-20 px-6">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h1 className="text-5xl font-bold leading-tight mb-4">
+              Sheily Acuña
+            </h1>
+            <p className="text-xl mb-6 text-pink-50">
+              Asistente Administrativa en formación
+            </p>
+            <p className="text-base leading-relaxed text-slate-700">
+              Estudiante de Asistencia Administrativa, comprometida con el
+              aprendizaje continuo, la organización y el desarrollo profesional.
+              Motivada por aportar eficiencia, responsabilidad y apoyo a equipos
+              administrativos.
+            </p>
+
+            <div className="mt-8 flex gap-4 flex-wrap">
+              <button className="bg-pink-200 text-slate-800 px-6 py-3 rounded-2xl font-semibold shadow hover:scale-105 transition">
+                Contactar
+              </button>
+              <button className="border border-pink-100 px-6 py-3 rounded-2xl font-semibold hover:bg-white hover:text-slate-800 transition">
+                Ver Perfil
+              </button>
+            </div>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="w-72 h-72 rounded-full bg-white/40 border-4 border-pink-100 flex items-center justify-center text-center shadow-2xl backdrop-blur-sm">
+              <div>
+                <p className="text-2xl font-bold">Sheily</p>
+                <p className="text-lg text-pink-50">Acuña</p>
+                <p className="mt-3 text-sm text-slate-300 px-6">
+                  Organización • Responsabilidad • Compromiso
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            Acerca de mí
+          </h2>
+
+          <div className="bg-white rounded-3xl shadow-lg border border-pink-100 p-8 leading-relaxed text-lg">
+            Soy estudiante de Asistencia Administrativa y actualmente me
+            encuentro finalizando el segundo semestre de formación académica.
+            Me caracterizo por ser una persona organizada, responsable y con
+            disposición para aprender constantemente.
+            <br />
+            <br />
+            Tengo interés en fortalecer mis conocimientos en gestión documental,
+            atención al cliente y procesos administrativos, aportando siempre
+            compromiso, buena comunicación y trabajo en equipo.
+          </div>
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section className="bg-blue-50 py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold mb-10 text-center">
+            Competencias
+          </h2>
+
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {[
+              "Organización y planificación",
+              "Atención al detalle",
+              "Comunicación escrita y verbal",
+              "Gestión documental",
+              "Atención al cliente",
+              "Manejo básico de Excel",
+              "Trabajo en equipo",
+              "Responsabilidad y compromiso",
+              "Gestión del tiempo",
+            ].map((skill) => (
+              <div
+                key={skill}
+                className="bg-pink-50 border border-pink-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition"
+              >
+                <p className="font-medium">{skill}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Education */}
+      <section className="py-20 px-6 bg-blue-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Formación Académica</h2>
+
+          <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <h3 className="text-2xl font-semibold mb-3">
+              Asistencia Administrativa
+            </h3>
+            <p className="text-slate-600 text-lg">
+              Actualmente finalizando el segundo semestre.
+            </p>
+            <p className="mt-4 text-slate-700 leading-relaxed">
+              Formación enfocada en procesos administrativos, atención al
+              cliente, organización documental y herramientas básicas de
+              oficina.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Professional Goal */}
+      <section className="py-20 px-6 bg-gradient-to-r from-pink-300 via-blue-200 to-blue-300 text-slate-800">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6">Objetivo Profesional</h2>
+
+          <p className="text-lg leading-relaxed text-slate-700">
+            Desarrollarme profesionalmente en el área administrativa,
+            adquiriendo experiencia práctica y fortaleciendo mis habilidades
+            para aportar organización, eficiencia y compromiso dentro de una
+            empresa u organización.
+          </p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-pink-100 text-slate-700 py-8 text-center">
+        <p className="text-sm">
+          © 2026 Sheily Acuña • Portafolio Profesional
+        </p>
+      </footer>
+    </div>
+  );
+}
