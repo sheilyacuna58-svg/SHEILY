@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Sheily Acuña</title>
+    <style>
+        /* CSS: Estilos del portafolio */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; background-color: #f4f7f6; color: #333; }
+        header { background: #2c3e50; color: #fff; padding: 2rem; text-align: center; }
+        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 20px; }
+        h2 { border-bottom: 2px solid #3498db; padding-bottom: 10px; color: #2c3e50; }
+        .skill-bar { background: #eee; height: 20px; border-radius: 10px; margin: 10px 0; overflow: hidden; }
+        .skill-level { background: #3498db; height: 100%; width: 0; transition: width 1.5s ease-in-out; }
+        button { background: #3498db; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; margin-top: 20px; }
+        button:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sheily Acuña</h1>
+    <p>Asistente Administrativa en Formación</p>
+</header>
+
+<div class="container">
+    <h2>Perfil Profesional</h2>
+    <p>Estudiante de Asistencia Administrativa con enfoque en procesos organizacionales, atención al cliente y gestión contable. Comprometida con la eficiencia y el orden en el entorno corporativo.</p>
+
+    <h2>Competencias Técnicas</h2>
+    <p>Excel Avanzado / Gestión de Nómina</p>
+    <div class="skill-bar"><div class="skill-level" data-width="90%"></div></div>
+    
+    <p>Organización Documental</p>
+    <div class="skill-bar"><div class="skill-level" data-width="85%"></div></div>
+
+    <button onclick="saludar()">Contactar</button>
+</div>
+
+<script>
+    // JS: Animación de barras y funciones simples
+    window.onload = () => {
+        const bars = document.querySelectorAll('.skill-level');
+        bars.forEach(bar => {
+            bar.style.width = bar.getAttribute('data-width');
+        });
+    };
+
+    function saludar() {
+        alert("¡Gracias por visitar mi portafolio! Estoy abierta a oportunidades laborales.");
+    }
+</script>
+
+</body>
+</html><h2>Competencias Técnicas</h2>
+    
+    <p>Excel (Tablas dinámicas, fórmulas contables)</p>
+    <div class="skill-bar"><div class="skill-level" data-width="90%"></div></div>
+    
+    <p>Gestión Contable (Nómina, prestaciones, parafiscales)</p>
+    <div class="skill-bar"><div class="skill-level" data-width="85%"></div></div>
+
+    <p>Gestión Documental y Archivo</p>
+    <div class="skill-bar"><div class="skill-level" data-width="95%"></div></div>
+
+    <p>Redacción Profesional y Ortografía</p>
+    <div class="skill-bar"><div class="skill-level" data-width="90%"></div></div>
+
+    <h2>Habilidades Blandas (Soft Skills)</h2>
+    <ul style="list-style-type: square;">
+        <li><strong>Comunicación Asertiva:</strong> Capacidad para transmitir información clara y profesional.</li>
+        <li><strong>Atención al Detalle:</strong> Rigurosidad en la verificación de datos contables y administrativos.</li>
+        <li><strong>Resolución de Problemas:</strong> Enfoque analítico para la optimización de procesos.</li>
+        <li><strong>Gestión del Tiempo:</strong> Habilidad para priorizar tareas bajo cronograma.</li>
+        <li><strong>Ética Profesional:</strong> Manejo responsable y confidencial de información sensible.</li>
+    </ul>
